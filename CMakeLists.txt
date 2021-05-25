@@ -3,9 +3,12 @@ project(Image_Steganography)
 set(CMAKE_CXX_STANDARD 20)
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -fconcepts")
 include_directories(
+        ${PROJECT_SOURCE_DIR}/third/
         ${PROJECT_SOURCE_DIR}/src/
 )
 set(src_dir
-        ${PROJECT_SOURCE_DIR}/src/main.cpp
+        ${PROJECT_SOURCE_DIR}/third/LBitmap1.cpp
         )
-add_executable(code ${src_dir})
+# add_executable(trans ${src_dir} src/TransImage.cpp)
+# add_executable(encrypt ${src_dir} src/R-LSB_encrypt.cpp)
+# add_executable(decrypt ${src_dir} src/R-LSB_decrypt.cpp)
