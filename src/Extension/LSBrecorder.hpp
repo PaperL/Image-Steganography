@@ -31,7 +31,7 @@ public:
             std::cout << "error: not encrypt type\n";
             return;
         }
-        if (y > Y) {
+        if (y >= Y) {
             std::cout << "error: overflow\n";
             return;
         }
@@ -55,7 +55,7 @@ public:
             std::cout << "error: not decrypt type\n";
             return 0;
         }
-        if (y > Y) {
+        if (y >= Y) {
             std::cout << "error: overflow\n";
             return 0;
         }
