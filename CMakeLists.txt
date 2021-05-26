@@ -14,4 +14,4 @@ set(src_dir
 
 # add_executable(encrypt ${src_dir} src/Experiment1/R-LSB_encrypt.cpp)
 # add_executable(decrypt ${src_dir} src/Experiment1/R-LSB_decrypt.cpp)
-add_executable(encrypt ${src_dir} src/Extension/city_decrypt.cpp)
+add_executable(encrypt ${src_dir} src/Extension1/city_decrypt.cpp)
